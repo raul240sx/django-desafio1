@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- AQUÍ RECIVO EL CONTEXTO LLAMADO EMPLEADOS Y HAGO UN FOR PARA MOSTRAR UNO POR UNO EL NOMBRE EN UNA LISTA DE HTML -->
+    <h1>Empleados:</h1>
+    {% for empleado in empleados %}
+        <li>{{ empleado }}</li>
+    {% endfor %}
+
+</body>
+</html>
+
